@@ -33,6 +33,17 @@ A data dictionary is a centralized resource that offers metadata about data elem
 
 4. **Finalize**: Save your changes to the data dictionary CSV. You can now use this as a comprehensive guide for data understanding and manipulation.
 
+## Example
+
+Running this script for the all famous titanic dataset on Kaggle:
+
+    ```bash
+    poetry run scripts/extract_data_dictionary.py --csv-file=data/titanic_train.csv
+    ```
+
+And it will output `data_dictionary.csv`
+![example](assets/Screenshot_2023-09-09_20-06-39.png)
+
 ## Contribution
 
 We welcome contributions! Feel free to fork this repository and submit pull requests, or open an issue to discuss what you'd like to add.
