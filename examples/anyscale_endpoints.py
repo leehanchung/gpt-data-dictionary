@@ -21,6 +21,8 @@ chat_completion = openai.ChatCompletion.create(
     temperature=0.01,
     stream=True
 )
+
+# Streaming
 for message in chat_completion:
     message = message["choices"][0]["delta"]
     if "content" in message:

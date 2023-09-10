@@ -8,10 +8,10 @@ import openai
 from dotenv import load_dotenv
 
 try:
-    from gpt_data import data_dictionary
+    from data_dictionary import data_dictionary
 except ImportError:
     sys.path.append(str(Path.cwd()))
-    from gpt_data import data_dictionary
+    from data_dictionary import data_dictionary
 
 
 load_dotenv()

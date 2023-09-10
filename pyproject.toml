@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "gpt_data-dictionary"
+name = "data_dictionary"
 version = "0.1.0"
-description = "Automate generation and maintenance of data dictionary uT"
+description = "data-dictionary is a Python package that automates the creation of data dictionaries utilizing LLM. It generates human-readable variable names and provides comprehensive metadata, making it an essential tool for data management, enhancing data interpretability and quality assurance."
 authors = ["leehanchung <lee.hanchung@gmail.com>"]
-license = "\"LICENSE\""
+license = {file = "LICENSE"}
 readme = "README.md"
-packages = [{include = "gpt_data_dictionary"}]
+packages = [{include = "data_dictionary"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
