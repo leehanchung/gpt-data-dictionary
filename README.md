@@ -26,7 +26,7 @@ A data dictionary is a centralized resource that offers metadata about data elem
   
 2. **Run the Script**: Execute the main Python script and provide the path to your CSV file.
     ```bash
-    poetry run gpt_data --file_path /path/to/your/csv/file.csv
+    poetry run scripts/extract_data_dictionary.py --csv-file=/path/to/your/csv/file.csv
     ```
 
 3. **Review and Edit**: The generated data dictionary will be saved as a CSV file. Open it to manually enter any domain-specific information that couldn't be automatically generated.
