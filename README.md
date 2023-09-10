@@ -26,7 +26,7 @@ A data dictionary is a centralized resource that offers metadata about data elem
   
 2. **Run the Script**: Execute the main Python script and provide the path to your CSV file.
     ```bash
-    poetry run scripts/extract_data_dictionary.py --csv-file=/path/to/your/csv/file.csv
+    poetry run scripts/extract_gpt_data_dictionary.py --csv-file=/path/to/your/csv/file.csv
     ```
 
 3. **Review and Edit**: The generated data dictionary will be saved as a CSV file. Open it to manually enter any domain-specific information that couldn't be automatically generated.
@@ -38,10 +38,10 @@ A data dictionary is a centralized resource that offers metadata about data elem
 Running this script for the all famous titanic dataset on Kaggle:
 
     ```bash
-    poetry run scripts/extract_data_dictionary.py --csv-file=data/titanic_train.csv
+    poetry run scripts/extract_gpt_data_dictionary.py --csv-file=data/titanic_train.csv
     ```
 
-And it will output `data_dictionary.csv`
+And it will output `gpt_data_dictionary.csv`
 ![example](assets/Screenshot_2023-09-09_20-06-39.png)
 
 ## Contribution

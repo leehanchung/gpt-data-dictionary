@@ -8,10 +8,10 @@ import openai
 from dotenv import load_dotenv
 
 try:
-    from data_dictionary import data_dictionary
+    from gpt_data_dictionary import gpt_data_dictionary
 except ImportError:
     sys.path.append(str(Path.cwd()))
-    from data_dictionary import data_dictionary
+    from gpt_data_dictionary import gpt_data_dictionary
 
 
 load_dotenv()
@@ -23,8 +23,8 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
 def main(*, csv_file: str):
-    df = data_dictionary(csv_file=csv_file)
-    df.to_csv("data_dictionary.csv", index=False)
+    df = gpt_data_dictionary(csv_file=csv_file)
+    df.to_csv("gpt_data_dictionary.csv", index=False)
 
 
 if __name__ == "__main__":

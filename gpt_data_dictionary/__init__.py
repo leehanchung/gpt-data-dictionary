@@ -85,7 +85,7 @@ def infer_data_type(*, unique_values: list) -> str:
     return message_json['data_type']
 
 
-def data_dictionary(*, csv_file: str) -> pd.DataFrame:
+def gpt_data_dictionary(*, csv_file: str) -> pd.DataFrame:
     df = pd.read_csv(csv_file)
     df = df.where(pd.notnull(df), None)
 
